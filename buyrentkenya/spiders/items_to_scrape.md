@@ -1,0 +1,12 @@
+- land area: '//span[@aria-label="area"]/text()'
+- bedrooms: '//span[@aria-label="bedrooms"]/text()'
+- bathrooms: '//span[@aria-label="bathrooms"]/text()'
+- price: '//span[@aria-label="price"]/text()'
+- property title: house_listing
+- agent name: '//img[@data-cy="agency-image"]/@alt'
+- date created: '//span[@date-cy="date-created"]/text()'
+- internal features: '(//div[@class="flex flex-col pb-2"])[1]/ul[@class="items-center flex flex-row flex-wrap"]/li/div/text()'-> .getall()
+- external features: '(//div[@class="flex flex-col pb-2"])[2]/ul[@class="items-center flex flex-row flex-wrap"]/li/div/text()'-> .getall()
+- nearby: '(//div[@class="flex flex-col pb-2"])[3]/ul[@class="items-center flex flex-row flex-wrap"]/li/div/text()'-> .getall()
+
+--- house link
